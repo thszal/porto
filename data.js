@@ -23,7 +23,7 @@ const SITE_DATA = {
   /* ---- Home page "Selected Work" teaser (first item is the large one) ---- */
   selectedWork: [
     { src: "https://picsum.photos/seed/ijal-1/900/1200", label: "Portrait, 2026" },
-    { src: "https://picsum.photos/seed/ijal-2/700/560",  label: "Landscape, 2025" },
+    { src: "https://i.ibb.co.com/8RDqh53/IMG-1347-1.jpg",  label: "Landscape, 2025" },
     { src: "https://picsum.photos/seed/ijal-4/700/560",  label: "Event, 2025" },
     { src: "https://picsum.photos/seed/ijal-6/700/560",  label: "Street, 2025" },
     { src: "https://picsum.photos/seed/ijal-8/700/560",  label: "Event, 2026" }
@@ -33,7 +33,7 @@ const SITE_DATA = {
      category: "portrait" | "landscape" | "event" | "street" */
   gallery: [
     { src:"https://picsum.photos/seed/ijal-1/600/750",  full:"https://picsum.photos/seed/ijal-1/1200/1500", category:"portrait",  caption:"Portrait · 2026" },
-    { src:"https://picsum.photos/seed/ijal-2/600/450",  full:"https://picsum.photos/seed/ijal-2/1200/900",  category:"landscape", caption:"Landscape · 2025" },
+    { src:"https://i.ibb.co.com/8RDqh53/IMG-1347-1.jpg",  full:"https://i.ibb.co.com/8RDqh53/IMG-1347-1.jpg",  category:"landscape", caption:"Landscape · 2025" },
     { src:"https://picsum.photos/seed/ijal-3/600/800",  full:"https://picsum.photos/seed/ijal-3/1200/1600", category:"street",    caption:"Candid · 2026" },
     { src:"https://picsum.photos/seed/ijal-4/600/600",  full:"https://picsum.photos/seed/ijal-4/1200/1200", category:"event",     caption:"Event · 2025" },
     { src:"https://picsum.photos/seed/ijal-5/600/750",  full:"https://picsum.photos/seed/ijal-5/1200/1500", category:"portrait",  caption:"Portrait · 2026" },
