@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>About — Ijal</title>
+<meta name="description" content="About Mayzal (Ijal), freelance photographer and 2026 graduate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <filter id="liquidGlass" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="turb">
+      <animate attributeName="baseFrequency" values="0.010;0.020;0.010" dur="7s" repeatCount="indefinite"/>
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="turb" scale="22" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="grain"></div>
+
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Ijal" class="logo-img">
+    </a>
+    <div class="nav-right">
+      <div class="toggle" id="themeToggle" role="button" aria-label="Toggle theme">
+        <div class="knob"><svg id="knobIcon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero wrap">
+    <div class="eyebrow reveal in"><span class="dot"></span>About</div>
+    <h1 class="reveal in">Behind the camera, still figuring it out — one frame at a time.</h1>
+  </section>
+
+  <section class="section-pad wrap" style="padding-top:0;">
+    <div class="about-copy reveal">
+      <p class="lead">I'm Mayzal — most people call me <span class="accent">Ijal</span>, though a few sources know me as <span class="accent">thszal</span>.</p>
+      <p>My interest in photography started back in middle school, and it never really left — what began as messing around with a borrowed camera turned into something I now take seriously. In 2026 I graduated, and around the same time I started taking on freelance photography work in parallel.</p>
+      <p>Right now I work steadily with one vendor, shooting a mix of portraits, events, and whatever else the moment calls for — all through my own camera. Every project starts the same way: pay attention, wait for the frame to arrive, and press the shutter before it's gone.</p>
+      <p>This site is where I keep the shots I'm proud of. The gallery is a work in progress, same as I am.</p>
+    </div>
+
+    <div class="principle-block reveal">
+      <div class="txt">
+        <h3>I'd rather shoot under than over.</h3>
+        <p>Given the choice between a frame that's slightly too dark or slightly blown out, I'll take the dark one every time — you can recover shadow detail, you can't recover a blown highlight. It's less a technical rule and more how I think about restraint in general: hold back a little, and there's always something left to work with.</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="section-head" style="margin-bottom:30px;">
+        <h2 style="font-size:1.6rem;">How a shoot happens</h2>
+      </div>
+      <div class="process">
+        <div class="step">
+          <span class="num">01</span>
+          <h3>Scout &amp; plan</h3>
+          <p>Understand the brief, walk the location if I can, and work out where the light will actually be.</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <h3>Shoot</h3>
+          <p>Stay light on gear, stay patient with timing, and lean under-exposed rather than risk blowing highlights.</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <h3>Edit &amp; deliver</h3>
+          <p>Cull hard, edit lightly, and hand off a set that still looks like the moment it was shot in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div class="footer-inner">
+    <span>© 2026 Mayzal (Ijal). All photographs are my own.</span>
+    <a href="#top" class="to-top">Back to top
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<div class="bottom-cluster">
+<div class="player" id="player">
+  <div class="player-bar" id="playerBar">
+    <div class="player-cover"><img id="playerCover" src="" alt="Now playing cover"></div>
+    <div class="player-meta">
+      <div class="player-title" id="playerTitle">—</div>
+      <div class="player-artist" id="playerArtist">—</div>
+    </div>
+    <div class="player-controls">
+      <button id="prevBtn" aria-label="Previous track"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zM20 6L9 12l11 6z"/></svg></button>
+      <button id="playBtn" class="play" aria-label="Play"><svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+      <button id="nextBtn" aria-label="Next track"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM4 6l11 6-11 6z"/></svg></button>
+    </div>
+    <div class="player-expand" id="playerExpand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div>
+  </div>
+  <div class="player-progress" id="playerProgress"><div class="fill" id="progressFill"></div></div>
+  <div class="player-list" id="playerList"></div>
+</div>
+<nav class="ios-tabbar" id="iosTabbar">
+  <div class="tab-indicator" id="tabIndicator"></div>
+  <a href="index.html" class="tab-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="about.html" class="tab-item active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.4-3.8 4.4-5.8 7.5-5.8s6.1 2 7.5 5.8"/></svg>
+    <span>About</span>
+  </a>
+  <a href="gallery.html" class="tab-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.5"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="1.5"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.5"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.5"/></svg>
+    <span>Gallery</span>
+  </a>
+  <a href="contact.html" class="tab-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h16v12H8l-4 4z"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+</div>
+<audio id="audioEl" preload="metadata"></audio>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
